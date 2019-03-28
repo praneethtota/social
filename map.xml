@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="MobileSwan" android:visibility="visible" 
+    android:typeface="normal" android:enabled="true" android:textSize="24sp" 
+    android:padding="10dp" android:gravity="center" android:editable="true" android:bufferType="editable" android:background="#C3D9FF" android:textColor="#FF0000"/><LinearLayout android:id="@+id/LinearLayout02" 
+    android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="fill_parent">
+
+
+
+
+ <com.google.android.maps.MapView
+                 xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:enabled="true"
+                 android:clickable="true"
+                 android:apiKey="0OJT_0cNI3TM77IOlZ1YUSYKUcurlQbZYWKsusw" 
+                 android:id="@+id/mapview"/>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_gravity="bottom" 
+android:layout_width="fill_parent" android:layout_height="wrap_content">
+<ImageButton android:id="@+id/Search" 
+    android:src="@drawable/home" 
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:layout_gravity="bottom" android:layout_weight="1" ></ImageButton>
+
+<ImageButton android:id="@+id/Friends" 
+    android:src="@drawable/friendi"
+    android:layout_weight="1" android:layout_gravity="center"
+        android:layout_width="wrap_content" 
+    android:layout_height="match_parent"></ImageButton>
+    
+    <ImageButton android:id="@+id/Settings" 
+    android:src="@drawable/options" 
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:layout_gravity="bottom" android:layout_weight="1" ></ImageButton>
+
+<Button android:layout_width="wrap_content" android:layout_height="match_parent" 
+android:text="Interest" android:id="@+id/Interest" android:textSize="12sp" 
+android:layout_weight="1"></Button>
+</LinearLayout>
+
+</LinearLayout>

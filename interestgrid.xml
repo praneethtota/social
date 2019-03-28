@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/idinterest"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#FFFFFF" xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="MobileSwan" 
+    android:visibility="visible" 
+    android:typeface="normal" 
+    android:enabled="true" 
+    android:textSize="24sp" 
+    android:padding="10dp" 
+    android:gravity="center" 
+    android:editable="true" 
+    android:bufferType="editable" 
+    android:background="#C3D9FF" 
+    android:textColor="#FF0000"></TextView>
+ 
+<GridView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/Intgridview"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:columnWidth="120dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="20dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    android:layout_weight="1">
+    </GridView>
+<LinearLayout android:layout_gravity="bottom" 
+android:id="@+id/ILinearLayout01" 
+android:layout_width="match_parent" 
+android:layout_height="wrap_content">
+
+    <ImageButton android:id="@+id/Search" 
+    android:src="@drawable/home" 
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:layout_gravity="bottom" android:layout_weight="1" 
+    ></ImageButton>
+    <ImageButton android:id="@+id/Friends"  
+    android:src="@drawable/refresh"
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:layout_gravity="bottom" android:layout_weight="1" 
+    ></ImageButton>
+    <ImageButton android:id="@+id/Settings"  
+    android:src="@drawable/plus" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:layout_weight="1"  android:layout_gravity="bottom">
+    </ImageButton>
+    <ImageButton android:id="@+id/Map"  android:src="@drawable/minus"  
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:layout_gravity="center" android:layout_weight="1" 
+    ></ImageButton>
+</LinearLayout>
+
+</LinearLayout>

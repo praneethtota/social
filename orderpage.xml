@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/bizorder"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#C3D9FF">
+
+
+<TextView
+android:layout_width="fill_parent"
+android:id="@+id/textorder1"
+android:textStyle="bold"
+android:text="Your Order"
+android:layout_height="40dp"
+android:textColor="#000000"
+android:textSize="18sp"  
+android:padding="10dp" 
+android:gravity="center"
+></TextView>
+
+
+
+<LinearLayout android:id="@+id/LinearLayoutbzorder" 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent" 
+android:background="#FFFFFF" 
+android:orientation="vertical"
+android:layout_weight="1">
+<ListView android:id="@+id/orderlist" 
+android:layout_width="fill_parent" android:layout_height="fill_parent" 
+android:scrollingCache="true"
+android:cacheColorHint="#FFFFFF"
+android:layout_weight="1">
+</ListView>
+</LinearLayout>
+
+<LinearLayout android:id="@+id/LinearLayoutbl2" android:layout_gravity="bottom" 
+android:layout_width="fill_parent" android:layout_height="wrap_content">
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" 
+android:text="Home" android:id="@+id/Home" android:textSize="12sp" android:layout_weight="0.5"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" 
+android:text="Place Order" android:id="@+id/PlaceOrder" android:textSize="12sp" android:paddingLeft="20sp" android:paddingRight="20sp" android:layout_weight="1"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" 
+android:text="Change" android:id="@+id/Change" android:textSize="12sp" android:layout_weight="0.5"></Button>
+</LinearLayout>
+
+
+</LinearLayout>

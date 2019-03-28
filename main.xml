@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/mainview"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#FFFFFF">
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="1sp" 
+    android:text="SocialNet" 
+    android:visibility="visible" 
+    android:typeface="normal" 
+    android:enabled="true" 
+    android:textSize="12sp" 
+    android:padding="10dp" 
+    android:gravity="center" 
+    android:editable="true" 
+    android:bufferType="editable" 
+    android:background="#C3D9FF" 
+    android:textColor="#FF0000"></TextView>
+ 
+ <LinearLayout  
+    android:layout_width="fill_parent" 
+    android:layout_height="25sp" 
+    android:background="#C3D9FF" android:layout_weight="0"> 
+
+<TextView 
+android:gravity="center"
+android:id="@+id/TextView01" android:textSize="18sp" 
+android:layout_height="20sp" 
+android:layout_width="fill_parent" android:textColor="#FF0000"
+android:layout_weight="0"  
+android:text="MobileSwan"></TextView>    
+</LinearLayout>
+ 
+ <LinearLayout  
+    android:layout_width="fill_parent" 
+    android:layout_height="35sp" 
+    android:background="#C3D9FF" android:layout_weight="0"> 
+
+<TextView 
+android:gravity="left"
+android:id="@+id/TextViewlogin" 
+android:textSize="14sp" 
+android:layout_height="fill_parent" android:layout_weight="1" 
+android:layout_width="wrap_content" android:textColor="#FF0000" 
+android:text="Hi">
+</TextView>    
+
+<Button 
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Favorites"
+android:id="@+id/Favorites"
+android:textColor="#FF0000"
+android:textSize="12sp"
+ 
+>
+</Button>
+
+</LinearLayout>
+  
+ 
+<GridView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:columnWidth="90dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="30dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    android:layout_weight="1">
+    </GridView>
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_gravity="bottom" 
+android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true">
+<ImageButton android:id="@+id/Search" 
+    android:src="@drawable/home" 
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:layout_gravity="bottom" android:layout_weight="1" ></ImageButton>
+
+
+<ImageButton android:id="@+id/Friends" 
+    android:src="@drawable/friendi"
+    android:layout_weight="1" android:layout_gravity="center"
+    android:layout_width="wrap_content" 
+    android:layout_height="match_parent"></ImageButton>
+    
+    <ImageButton android:id="@+id/Settings" 
+    android:src="@drawable/options" 
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:layout_gravity="bottom" android:layout_weight="1" ></ImageButton>
+
+<Button android:layout_width="wrap_content" android:layout_height="match_parent" 
+android:text="Interest" android:id="@+id/Interest" android:textSize="12sp" 
+android:layout_weight="1"></Button>
+</LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
