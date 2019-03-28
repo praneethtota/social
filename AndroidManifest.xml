@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.example.socialnet"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+      
+        
+      <uses-permission android:name="android.permission.INTERNET"/>
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"    />
+      
+    <application android:icon="@drawable/swan" android:label="@string/app_name" android:debuggable="true">
+    
+    <uses-library android:name="com.google.android.maps" />
+
+
+    
+
+
+        <activity android:name=".Socialnet"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <service android:name=".CheckMessage" />
+
+ <activity android:name=".Categories" android:label="Categories">
+         <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+                        <category android:name="android.intent.category.DEFAULT" />
+               </intent-filter>
+              
+      </activity>
+      
+       <activity android:name=".BizPage" android:label="BusinessPage">
+         <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+                        <category android:name="android.intent.category.DEFAULT" />
+               </intent-filter>
+              
+      </activity>
+
+ <activity android:name=".Favorites" android:label="Favorites">
+         <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+                        <category android:name="android.intent.category.DEFAULT" />
+               </intent-filter>
+               
+      </activity>
+        
+         <activity android:name=".Friends" android:label="Friends">
+         <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+                        <category android:name="android.intent.category.DEFAULT" />
+               </intent-filter>
+             
+      </activity>
+
+         <activity android:name=".addfrnd" android:label="Add Friend">
+         <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+                        <category android:name="android.intent.category.DEFAULT" />
+               </intent-filter>
+             
+      </activity>
+
+
+      
+        <activity android:name=".Settings" android:label="Settings">
+        <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                  </intent-filter>
+                  
+      </activity>
+
+  <activity android:name=".Maps" 
+  android:label="Maps">
+  <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                  </intent-filter>
+                
+      </activity>
+
+  <activity android:name=".Interest" 
+  android:label="Interests">
+  <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                  </intent-filter>
+                
+      </activity>
+
+  <activity android:name=".IntList" 
+  android:label="InterestList">
+  <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                  </intent-filter>
+                
+      </activity>
+      
+
+  <activity android:name=".Mapover" 
+  android:label="Mapover">
+  <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                  </intent-filter>
+                
+      </activity>
+        
+      
+    </application>
+     <uses-sdk android:minSdkVersion="8" />
+</manifest>
